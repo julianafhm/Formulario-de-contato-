@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de contato</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Peça o seu orçamento agora mesmo!</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="row">
+                <div class="form-control">
+                    <input type="text" id="username" required>
+                    <div class="labelline">Nome</div>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="email" required>
+                    <div class="labelline">E-mail</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-control">
+                    <input type="tel" id="telefone" required>
+                    <div class="labelline">Telefone</div>
+                </div>
+
+                <div class="form-control">
+                    <select id="servicos" name="servicos" required>
+                        <option value=" ">Escolha o serviço que deseja</option>
+                        <option value="seo">SEO</option>
+                        <option value="gestao">Gestão de tráfego</option>
+                        <option value="conteudo">Conteúdo</option>
+                        <option value="atendiento">Atendimento</option>
+                        <option value="criacao">Criação</option>
+                        <option value="tecnologia">Tecnologia (Desenvolvimento)</option>
+                        <option value="administracao">Administração</option>
+                        <option value="comercial">Comercial</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <input id="mensagem" required></input>
+                <div class="labelline">Mensagem</div>
+            </div>
+
+            <div class="form-control">
+            <button type="submit">Enviar</button>
+            </div>
+
+            <div id="msgSucesso" >Formulário enviado, em breve entraremos em contato!</div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

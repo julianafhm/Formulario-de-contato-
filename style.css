@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(152, 215, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} 
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 650px;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.row {
+    display:flex;
+    gap: 20px;
+    align-content: center;
+}
+
+.form-control {
+    position:relative;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input, select {
+    width: 100%;
+    border: 1px solid #1d1d1d;
+    border-radius: 4px;
+    background:none;
+    color: #000000;
+    font-size: 14px;
+    height: 48px;
+    padding: 10px; 
+}
+
+.labelline{
+    position: absolute;
+    font-size: 13px;
+    color:#1d1d1d;
+    padding: 2px;
+    margin: 10px;
+    background-color:transparent;
+    transition: 0.3s ease;
+}
+
+input:focus,
+input:valid{
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+}
+
+input:focus+ .labelline,
+input:valid+ .labelline{
+    color:#1d1d1d;
+    height: 30px;
+    line-height: 30px;
+    padding:0 20px;
+    transform: translate(-15px,-16px) scale(0.87);
+} 
+
+button {
+    width: auto;
+    padding: 10px;
+    border-radius: 4px;
+    background: #314dd7;
+    color: #fff;
+    font-size: 14px;
+    align-self: flex-end;
+}
+
+#mensagem {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#msgSucesso {
+    display: none;    
+    color: green;
+    margin-top: 5px;
+    text-align: center;
+}
